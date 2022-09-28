@@ -1,0 +1,1158 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andrea/ontologies/2022/6/untitled-ontology-54#"
+     xml:base="http://www.semanticweb.org/andrea/ontologies/2022/6/untitled-ontology-54"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/NISTAM4DefectOnt"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#definedBy -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology-v2#definedBy">
+        <owl:inverseOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#defines"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#defines -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology-v2#defines">
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology-v2#sameAs">
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#functionOf -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#functionOf">
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic">
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#AdditiveManufacturingProcess"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#influencedBy">
+        <owl:inverseOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#AdditiveManufacturingProcess"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#influences -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#influences">
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#AdditiveManufacturingProcess"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#partOf">
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#AdditiveManufacturingProcess"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#providedBy -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#providedBy">
+        <owl:inverseOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#provides"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#provides -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#provides">
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#hasBeamRadius -->
+
+    <owl:DatatypeProperty rdf:about="http://siam.nist.gov/AM-Ontology-v2#hasBeamRadius">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#hasInconel625PowderLayerThickness -->
+
+    <owl:DatatypeProperty rdf:about="http://siam.nist.gov/AM-Ontology-v2#hasInconel625PowderLayerThickness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#LayerThickness"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#hasScanningSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://siam.nist.gov/AM-Ontology-v2#hasScanningSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://siam.nist.gov/AM-Ontology-v2#hasValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#CapillaryEffect -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#CapillaryEffect">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTensionEffect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#FluidMechanicsCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#FluidMechanicsCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhenomenonCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#FullySinteredDensity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#FullySinteredDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ConsolidationBySinteringCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#GlassTransitionTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#GlassTransitionTemperature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhaseTransformationCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#LoosePowderDensity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#LoosePowderDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ConsolidationBySinteringCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#MarangoniEffect -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#MarangoniEffect">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTensionEffect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#MicrostructuralCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#MicrostructuralCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhenomenonCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#MicrostructuralPhenomenon -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#MicrostructuralPhenomenon">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SolidMechanicsCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#SolidMechanicsCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhenomenonCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#StructuralPhenomenon -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#StructuralPhenomenon">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SurfaceTensionEffect -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#SurfaceTensionEffect">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#FluidMechanicsCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#ThermalPhenomenon -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#ThermalPhenomenon">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Abstract -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Abstract">
+        <rdfs:comment>Abstract concepts include everything that does not exist in the physical universe (space/time).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#AdditiveManufacturingProcess -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#AdditiveManufacturingProcess">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#MfgProcess"/>
+        <rdfs:comment>An additive manufacturing process is a process of joining layering material to make objects from 3D model data, using a machine equipment (energy source, build platform, etc.) controlled by a computer [ASTM F2792-12a]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamSize -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamSize">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:comment>Size of the beam.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamType -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamType">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:comment>Whether the beam originates from a laser or an electron beam, and whether the beam is continuous or pulsed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamWavelength -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamWavelength">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter"/>
+        <rdfs:comment>Characteristics of the build chamber: composition, temperature, pressure.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ChamberTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ChamberTemperature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+        <rdfs:comment>Temperature inside the build chamber. Some systems have internal heaters (to prevent residual stresses due to thermal gradients) that allow for a reference chamber temperature to be pre-defined.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Characteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Characteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Abstract"/>
+        <rdfs:comment>A property of a thing or an individual.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ChemicalComposition -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ChemicalComposition">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification"/>
+        <rdfs:comment>Chemical composition of powder particles, as purchased. 
+All of them could have the same composition, or a combination of different compositions could be used.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Consolidation -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Consolidation">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ConsolidationByMeltingCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ConsolidationBySinteringCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An increment in the density of a material due to thermal processes or the addition of a binder.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ConsolidationByMelting -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ConsolidationByMelting">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Consolidation"/>
+        <rdfs:comment>Thermally-activated consolidation that occurs above the melting point of a material.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ConsolidationByMeltingCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ConsolidationByMeltingCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ConsolidationCharacteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#FluidMechanics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MicrostructureEvolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SolidMechanics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A set of characteristics that define a melting process. Most melting models are simple, as they assume that melting occurs instantaneously. The only characteristic necessary in such scenarios is a function describing how density is expected to change as a function of temperature.</rdfs:comment>
+        <rdfs:comment>Melting describes a process where temperature in the powder bed is raised above the liquidus temperature.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ConsolidationBySintering -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ConsolidationBySintering">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Consolidation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#FullySinteredDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#LoosePowderDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Thermally-activated consolidation that occurs below the melting point of a material.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ConsolidationBySinteringCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ConsolidationBySinteringCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ConsolidationCharacteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology-v2#definedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#FullySinteredDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology-v2#definedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#LoosePowderDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SolidMechanics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sintering, as a consolidation mechanism, is much slower than melting. It is commonly accepted that the mechanism controlling sintering is viscous sintering, driven by an effort to reduce surface energy at high temperatures. The characteristics required to describe these sintering processes depend on the model that is chosen, but they need to include either visosity or sintering activation energy, loose powder density, and fully-sintered density.</rdfs:comment>
+        <rdfs:comment>case1: consolidation is produced by solid-phase sintering, which is a process where the maximum temperature in the powder bed is below the solidus temperatures.
+
+case2: another sintering mechanism known as liquid state sintering (or partial melting), is a process where the maximum temperature in the powder bed is between the liquidus and solidus temperatures, causing a partial melting.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ConsolidationCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ConsolidationCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhenomenonCharacteristic"/>
+        <rdfs:comment>mainly concerns characteristics that determine the density variation process within melting or sintering
+
+Include characteristics that determine the consolidation mechanism that best describes the process.
+
+Consolidation characteristics also include the type of consolidation mechanism used in the powder bed fusion process. This will determine the range of temperatures in which the machine will operate and the desnity that can be expected from produced components.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DendriteGrainOrientation -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DendriteGrainOrientation">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Microstructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DentriticGrainSize -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DentriticGrainSize">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Microstructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DirectMetalLaserMelting -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DirectMetalLaserMelting">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DirectMetalLaserSintering -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DirectMetalLaserSintering">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ElectronBeamMelting -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ElectronBeamMelting">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/defectont#ProcessCharacteristic"/>
+        <rdfs:comment>Characteristics of the machine used in the process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ExtinctionCoefficient -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ExtinctionCoefficient">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#IrradiationAbsorptionCharacteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamWavelength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderSizeDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The extinction coefficient is a measure of how deep irradiation penetrates in the powder bed, as described by a Beer-Lambert model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#FluidMechanics -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#FluidMechanics">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+        <rdfs:comment>The motion of fluids (liquids, gases, and plasmas) and the forces that act upon them.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Fusion -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Fusion">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhaseTransformation"/>
+        <rdfs:comment>Melting. Phase change from solid to liquid.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#FusionCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#FusionCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhaseTransformationCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#GasComposition -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#GasComposition">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+        <rdfs:comment>Chemical composition of protective gas in the build chamber. When processing metals, noble gases are used to protect the liquid from oxidation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#GasPressure -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#GasPressure">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+        <rdfs:comment>Pressure of the protective gas in the build chamber.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HatchingDistance -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#HatchingDistance">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:comment>The trajectory to be followed by the heat source to scan the surface of a given layer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HeatDissipation -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#HeatDissipation">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatTransfer"/>
+        <rdfs:comment>The flow of thermal energy in a physical system as dictated only by diffusion.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HeatDissipationCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#HeatDissipationCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatTransferCharacteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Consolidation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#FluidMechanics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Characteristics that determine how easily heat is transmitted in a medium. They include thermal conductivity, density, heat capacity (all of which can be summarized in the form of thermal diffusivity); convection and radiation coefficients for the surface of the powder bed, and conductivity of the substrate.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:comment>Power used to heat powder when beam is on.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HeatTransfer -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#HeatTransfer">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ThermalPhenomenon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatDissipationCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhaseTransformationCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The exchange of thermal energy between physical systems due to conduction, convection and radiation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HeatTransferCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#HeatTransferCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhenomenonCharacteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatDissipationCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhaseTransformationCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Characteristics that define heat transfer processes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#IrradiationAbsorption -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#IrradiationAbsorption">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ThermalPhenomenon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ExtinctionCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The partial absorption of thermal energy in a body that is subject to irradiation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#IrradiationAbsorptionCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#IrradiationAbsorptionCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhenomenonCharacteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ExtinctionCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatDissipation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Distinguishing features or properties of how irradiation is absorbed by the powder bed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#LayerThickness -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#LayerThickness">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:comment>Thickness of layers of powder being spread.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Material -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Material">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolMaximumTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolMaximumTemperature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolSignature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolSignature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#LayerThickness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PackingDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderSizeDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolSignature"/>
+        <rdfs:comment>The temperature in the melt pool, as measured by the means of thermography in some applications. Or it can be approximated through computational multi physics model at the end pof the process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperatureGradient -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperatureGradient">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Microstructure -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Microstructure">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolMaximumTemperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperatureGradient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MicrostructureEvolution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MicrostructureEvolution">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MicrostructuralPhenomenon"/>
+        <rdfs:comment>The time history of microstructural phases in a material, as dictated by their composition and the temperature history.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#OpticalParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter"/>
+        <rdfs:comment>Characteristics of the heat source used for thermally-activated consolidation: Its type (laser or electron beam), power, scanning speed, size.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PackingDensity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PackingDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PhaseTransformation -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PhaseTransformation">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatTransfer"/>
+        <rdfs:comment>A thermally-activated change in the phase of a material.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PhaseTransformationCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PhaseTransformationCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatTransferCharacteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology-v2#definedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#FusionCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology-v2#definedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#VaporizationCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Phase transformation effects need to be taken into account when describing heat transfer as phase transformations take heat contributions (latent heat) that affect the thermal system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Phenomenon -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Physical"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhenomenonCharacteristic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A sub-set of observable events described by flows of matter and/or energy within a given physical domain.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PhenomenonCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PhenomenonCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:comment>A characteristic regarding a physical phenomenon.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Physical -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Physical">
+        <rdfs:comment>Physical concepts include everything that exists in the physical universe (space/time).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcess -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcess">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#AdditiveManufacturingProcess"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An additive manufacturing process in which thermal energy selectively fuses regions of a powder bed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessParameter"/>
+        <rdfs:comment>Distinguishing features required to define a powder bed fusion process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PowderSizeDistribution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PowderSizeDistribution">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification"/>
+        <rdfs:comment>Size of powder particles used in the process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ProcessParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ProcessParameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/defectont#ProcessCharacteristic"/>
+        <rdfs:comment>Distinguishing features required to define a process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ProcessSignature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/defectont#ProcessCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:comment>Scanning speed when the beam is on.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#SelectiveLaserMelting -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#SelectiveLaserMelting">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#SelectiveLaserSintering -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#SelectiveLaserSintering">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Shrinkage -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Shrinkage">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#LayerThickness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PackingDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#SolidMechanics -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#SolidMechanics">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#StructuralPhenomenon"/>
+        <rdfs:comment>The motion and deformation of solid materials under the action of loads, e.g. forces, temperature changes, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Vaporization -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Vaporization">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhaseTransformation"/>
+        <rdfs:comment>Phase change from liquid to vapor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#VaporizationCharacteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#VaporizationCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PhaseTransformationCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Void -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Void">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#Material -->
+
+    <owl:Class rdf:about="http://www.onto4additive.com/onto4add#Material">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#MfgProcess -->
+
+    <owl:Class rdf:about="http://www.onto4additive.com/onto4add#MfgProcess">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#Process -->
+
+    <owl:Class rdf:about="http://www.onto4additive.com/onto4add#Process">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/defectont#ProcessCharacteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/defectont#ProcessCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#GaussianSurfaceDistributionOfHeat -->
+
+    <owl:NamedIndividual rdf:about="http://siam.nist.gov/AM-Ontology-v2#GaussianSurfaceDistributionOfHeat"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SurfaceHeatAbsorption -->
+
+    <owl:NamedIndividual rdf:about="http://siam.nist.gov/AM-Ontology-v2#SurfaceHeatAbsorption"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#TemperatureDependentDensityOfTheSolid -->
+
+    <owl:NamedIndividual rdf:about="http://siam.nist.gov/AM-Ontology-v2#TemperatureDependentDensityOfTheSolid"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#TemperatureDependentFouriersLaw -->
+
+    <owl:NamedIndividual rdf:about="http://siam.nist.gov/AM-Ontology-v2#TemperatureDependentFouriersLaw"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#TemperatureDependentSinteringRate -->
+
+    <owl:NamedIndividual rdf:about="http://siam.nist.gov/AM-Ontology-v2#TemperatureDependentSinteringRate"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#TemperatutreDependentPowderPackingRatio -->
+
+    <owl:NamedIndividual rdf:about="http://siam.nist.gov/AM-Ontology-v2#TemperatutreDependentPowderPackingRatio"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#ThermalExchangeCoefficient -->
+
+    <owl:NamedIndividual rdf:about="http://siam.nist.gov/AM-Ontology-v2#ThermalExchangeCoefficient"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#3ThreeDimensionalModel -->
+
+    <owl:NamedIndividual rdf:about="http://siam.nist.gov/AM-Ontology-v2#3ThreeDimensionalModel"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

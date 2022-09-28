@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1663765733445" name="http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/OM4ExtruOnt" uri="OM4ExtruOnt4defectont.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1663765733445" name="http://www.semanticweb.org/andrea/ontologies/2022/8/Measure4DefectOnt" uri="Measure4DefectOnt.owl"/>
+    </group>
+</catalog>

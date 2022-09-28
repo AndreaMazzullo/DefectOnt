@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/andrea/ontologies/2022/6/GeoSPARQL4DefectOnt" uri="file:/Users/andrea/Dropbox/Ricerca/additive_manufacturing_ontology/Project/Ontology/defectont/defectont_main_new/module_spatial/GeoSPARQL4DefectOnt.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/andrea/ontologies/2022/6/Onto4Additive4DefectOnt" uri="Onto4additive4DefectOnt.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/andrea/ontologies/2022/6/NISTAM4DefectOnt" uri="NISTAM4DefectOnt.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/andrea/ontologies/2022/6/MASON4DefectOnt" uri="MASON4defectont.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1664040726521" name="http://www.semanticweb.org/andrea/ontologies/2022/6/untitled-ontology-54" uri="NISTAM4DefectOnt.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1664040726521" name="http://www.semanticweb.org/andrea/ontologies/2022/6/untitled-ontology-55" uri="MASON4defectont.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1664040726521" name="http://www.semanticweb.org/andrea/ontologies/2022/6/untitled-ontology-61" uri="Onto4additive4DefectOnt.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1664040726521" name="http://www.semanticweb.org/andrea/ontologies/2022/6/untitled-ontology-62" uri="MAM4DefectOnt.owl"/>
+    </group>
+</catalog>

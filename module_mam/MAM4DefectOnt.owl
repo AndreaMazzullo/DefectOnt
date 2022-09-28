@@ -1,0 +1,1635 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andrea/ontologies/2022/6/untitled-ontology-62#"
+     xml:base="http://www.semanticweb.org/andrea/ontologies/2022/6/untitled-ontology-62"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:onto4add="http://www.onto4additive.com/onto4add#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt">
+        <owl:imports rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/NISTAM4DefectOnt"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/Onto4Additive4DefectOnt"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/8/Spatial4DefectOnt"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#influences -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#hasLayer -->
+
+    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#hasLayer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isLayerOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto4additive.com/onto4add#hasPart"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#affects">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isAffectedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Physical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#hasLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isLocationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#induces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#induces">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isAffectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isAffectedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isConsequenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isConsequenceOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isLayerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isLayerOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isLocationOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isPresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isPresentedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#presents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#presents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#presents">
+        <rdfs:domain rdf:resource="http://www.onto4additive.com/onto4add#PhysicalObject"/>
+        <rdfs:range rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/Spatial4DefectOnt#hasSignedDeviationFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/Spatial4DefectOnt#hasSignedDeviationFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#hasBeamRadius -->
+
+    <owl:DatatypeProperty rdf:about="http://siam.nist.gov/AM-Ontology-v2#hasBeamRadius">
+        <rdfs:domain rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Abstract -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Abstract">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/mason.owl#Entity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#AdditiveManufacturingProcess -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#AdditiveManufacturingProcess">
+        <owl:equivalentClass rdf:resource="http://www.onto4additive.com/onto4add#AMProcess"/>
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#MfgProcess"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamSize -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamSize">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:comment>Size of the beam.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamType -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamType">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:comment>Whether the beam originates from a laser or an electron beam, and whether the beam is continuous or pulsed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamWavelength -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamWavelength">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter"/>
+        <rdfs:comment>Characteristics of the build chamber: composition, temperature, pressure.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ChamberTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ChamberTemperature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+        <rdfs:comment>Temperature inside the build chamber. Some systems have internal heaters (to prevent residual stresses due to thermal gradients) that allow for a reference chamber temperature to be pre-defined.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Characteristic -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/defectont#ProcessCharacteristic"/>
+        <rdfs:comment>Characteristics of the machine used in the process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#GasComposition -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#GasComposition">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+        <rdfs:comment>Chemical composition of protective gas in the build chamber. When processing metals, noble gases are used to protect the liquid from oxidation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#GasPressure -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#GasPressure">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+        <rdfs:comment>Pressure of the protective gas in the build chamber.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HatchingDistance -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#HatchingDistance"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#LayerThickness -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#LayerThickness"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Material -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Material">
+        <owl:equivalentClass rdf:resource="http://www.onto4additive.com/onto4add#Material"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolSignature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolSignature">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperatureGradient -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperatureGradient"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Microstructure -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Microstructure"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#OpticalParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter"/>
+        <rdfs:comment>Characteristics of the heat source used for thermally-activated consolidation: Its type (laser or electron beam), power, scanning speed, size.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PackingDensity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PackingDensity"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Physical -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Physical">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/mason.owl#Entity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ProcessSignature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Shrinkage -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Shrinkage"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Void -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Void"/>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#AMLayer -->
+
+    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#AMLayer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.onto4additive.com/onto4add#hasPart"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ContourRegion"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InfillRegion"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PowderRegion"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isLayerOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.onto4additive.com/onto4add#AMProduct"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#AMProcess -->
+
+    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#AMProcess">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#MfgProcess"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#AMSupportStructure -->
+
+    <owl:Class rdf:about="http://www.onto4additive.com/onto4add#AMSupportStructure"/>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#Material -->
+
+    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#Material"/>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#NonQuantitativeValueSpace -->
+
+    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#NonQuantitativeValueSpace">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Abstract"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#Object -->
+
+    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#Object">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Physical"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#Process -->
+
+    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#Process">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Physical"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#ProductFeature -->
+
+    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#ProductFeature">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#PhysicalArtefact"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.onto4additive.com/onto4add#Type -->
+
+    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#Type">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Abstract"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
+
+    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#Object"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#SpatialObjectCollection -->
+
+    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#SpatialObjectCollection">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#Object"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.owl-ontologies.com/mason.owl#Geometric_entity -->
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/mason.owl#Geometric_entity">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.owl-ontologies.com/mason.owl#Geometric_entity_for_manufacturing -->
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/mason.owl#Geometric_entity_for_manufacturing">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.owl-ontologies.com/mason.owl#Geometric_flaw -->
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/mason.owl#Geometric_flaw">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.owl-ontologies.com/mason.owl#Raw_material -->
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/mason.owl#Raw_material">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#Material"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BallingDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BallingDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalBallingDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfaceBallingDefect"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BuildChamberEnvironmentalControlInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#OrientationInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ParameterScanStrategyInducedDefect"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BaseplateInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BaseplateInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateMaterial"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplatePreHeatingTemperature"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateThickness"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BeamScanningDeflectionSystemInducedDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BuildChamberEnvironmentalControlInducedDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PowderHandlingDepositionSystemInducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BeamScanningDeflectionSystemInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BeamScanningDeflectionSystemInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BuildChamberEnvironmentalControlInducedDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PowderHandlingDepositionSystemInducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BuildChamberEnvironmentalControlInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BuildChamberEnvironmentalControlInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PowderHandlingDepositionSystemInducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ByproductMaterialEjectionInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ByproductMaterialEjectionInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ProcessInducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Ejection"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ProcessInducedDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ParameterScanStrategyInducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#CrackingDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#CrackingDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#affects"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#AMProduct"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.onto4additive.com/onto4add#hasFeature"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isConsequenceOf"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Fracture"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BaseplateInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BuildChamberEnvironmentalControlInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ParameterScanStrategyInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SupportInducedDefect"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#CrystallographicTexturesMicrostructuralDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#CrystallographicTexturesMicrostructuralDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#MicrostructuralDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#CurlingGeometricDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#CurlingGeometricDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#GeometricDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ShrinkageGeometricDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SuperelevatedEdgesGeometricDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#WarpingGeometricDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#PhysicalObject"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#affects"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Material"/>
+                                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#PhysicalArtefact"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#DesignInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#DesignInducedDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#InducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#InducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter"/>
+                                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#MfgDevice"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Material"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.onto4additive.com/onto4add#makes"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.onto4additive.com/onto4add#MfgDevice"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#InducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#FeedstockMaterialInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#FeedstockMaterialInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#InducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#PackingDensity"/>
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#PowderSizeDistribution"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#InducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#GeometricDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#GeometricDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#affects"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#AMProduct"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AsBuiltGeometry"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/Spatial4DefectOnt#hasSignedDeviationFrom"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AsDesignedGeometry"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BaseplateInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BeamScanningDeflectionSystemInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#FeedstockMaterialInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#OrientationInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ParameterScanStrategyInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PowderHandlingDepositionSystemInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SupportInducedDefect"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#GrainSizeMicrostructuralDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#GrainSizeMicrostructuralDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#MicrostructuralDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ImpuritiesMicrostructuralDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ImpuritiesMicrostructuralDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#MicrostructuralDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#InducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#InducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Material"/>
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+                                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#PhysicalObject"/>
+                                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#Process"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#MicrostructuralDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#MicrostructuralDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#affects"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#AMProduct"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#presents"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InhomogeneousMicrostructure"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BuildChamberEnvironmentalControlInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ByproductMaterialEjectionInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#FeedstockMaterialInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#OrientationInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ParameterScanStrategyInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PowderHandlingDepositionSystemInducedDefect"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#OrientationInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#OrientationInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#DesignInducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ProductOrientation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#DesignInducedDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SupportInducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ParameterScanStrategyInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ParameterScanStrategyInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ProcessInducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#HatchingDistance"/>
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower"/>
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#LayerThickness"/>
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ProcessInducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PorosityDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PorosityDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalPorosityDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfacePorosityDefect"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BeamScanningDeflectionSystemInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#BuildChamberEnvironmentalControlInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ByproductMaterialEjectionInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#FeedstockMaterialInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ParameterScanStrategyInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PowderHandlingDepositionSystemInducedDefect"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PowderHandlingDepositionSystemInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PowderHandlingDepositionSystemInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#MaterialDepositionSystem"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isAffectedBy"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ByproductMaterialEjectionInducedDefect"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SuperelevatedEdgesGeometricDefect"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#EquipmentInducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ProcessInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ProcessInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#InducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#ProcessParameter"/>
+                                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#Process"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#InducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ShrinkageGeometricDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ShrinkageGeometricDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#GeometricDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SuperelevatedEdgesGeometricDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#WarpingGeometricDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SuperelevatedEdgesGeometricDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SuperelevatedEdgesGeometricDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#GeometricDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#WarpingGeometricDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SupportInducedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SupportInducedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#DesignInducedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isInducedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.onto4additive.com/onto4add#AMSupportStructure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#DesignInducedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SurfaceDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SurfaceDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#LocatedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfOverlaps"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ContourRegion"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#LocatedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#WarpingGeometricDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#WarpingGeometricDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#GeometricDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AMLayerRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AMLayerRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PhysicalRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AsBuiltGeometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AsBuiltGeometry">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AsDesignedGeometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AsDesignedGeometry">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Baseplate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Baseplate">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#MfgDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateCharacteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#MfgDeviceCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateMaterial">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Material"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto4additive.com/onto4add#makes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Baseplate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto4additive.com/onto4add#makes"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Baseplate"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplatePreHeatingTemperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplatePreHeatingTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateThickness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateThickness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#BaseplateCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ContourRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ContourRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AMLayerRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#DelaminationDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#DelaminationDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#CrackingDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#DropletSpatter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#DropletSpatter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Ejection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Ejection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Ejection">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Fracture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Fracture">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SolidMechanics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InfillRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InfillRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AMLayerRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InhomogeneousMicrostructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InhomogeneousMicrostructure">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Microstructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalBallingDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalBallingDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/mason.owl#isMadeOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Material"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.onto4additive.com/onto4add#hasMaterialState"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:oneOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#solidState"/>
+                                                </owl:oneOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isConsequenceOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfaceTensionPhenomenon"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/8/Spatial4DefectOnt#hasApproximateGeometry"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/8/MAM4DefectOnt#Ball"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#LocatedDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfOverlaps"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InfillRegion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfOverlaps"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InfillRegion"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#LocatedDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalPorosityDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalPorosityDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#VoidRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/Spatial4DefectOnt#hasBoundary"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/Spatial4DefectOnt#ClosedSurface"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InternalDefect"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfacePorosityDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#LiquationCrackingDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#LiquationCrackingDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#CrackingDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#LocatedDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#LocatedDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfOverlaps"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AMLayerRegion"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#MaterialDepositionSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#MaterialDepositionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#MfgDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#MfgDeviceCharacteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#MfgDeviceCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PhysicalArtefactCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PhysicalArtefactCharacteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PhysicalArtefactCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PhysicalRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PhysicalRegion">
+        <rdfs:subClassOf rdf:resource="http://www.onto4additive.com/onto4add#PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PowderRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PowderRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#AMLayerRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PowderSpatter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PowderSpatter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#Ejection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ProductCharacteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ProductCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PhysicalArtefactCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ProductOrientation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ProductOrientation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ProductCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SolidificationCrackingDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SolidificationCrackingDefect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#CrackingDefect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfaceBallingDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfaceBallingDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SurfaceDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/mason.owl#isMadeOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Material"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.onto4additive.com/onto4add#hasMaterialState"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:oneOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#solidState"/>
+                                                </owl:oneOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#isConsequenceOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfaceTensionPhenomenon"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/8/Spatial4DefectOnt#hasApproximateGeometry"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/8/MAM4DefectOnt#HemiBall"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfacePorosityDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfacePorosityDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SurfaceDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#VoidRegion"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfaceRoughnessDefect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfaceRoughnessDefect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SurfaceDefect"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#affects"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.onto4additive.com/onto4add#AMProduct"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#presents"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/8/DefectOnt#RoughSurfaceTexture"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#FeedstockMaterialInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#OrientationInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#ParameterScanStrategyInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#PowderHandlingDepositionSystemInducedDefect"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#SupportInducedDefect"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfaceTensionPhenomenon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#SurfaceTensionPhenomenon">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#FluidMechanics"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#hasCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTensionEffect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#VoidRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#VoidRegion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PhysicalRegion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.onto4additive.com/onto4add#hasPart"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#VoidRegion"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/8/DefectOnt#RoughSurfaceTexture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/8/DefectOnt#RoughSurfaceTexture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/8/DefectOnt#SurfaceTexture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/8/DefectOnt#SurfaceTexture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/8/DefectOnt#SurfaceTexture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ProductCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/8/MAM4DefectOnt#Ball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/8/MAM4DefectOnt#Ball">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/mason.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/8/MAM4DefectOnt#HemiBall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/8/MAM4DefectOnt#HemiBall">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/mason.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#solidState -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#solidState">
+        <rdf:type rdf:resource="http://www.onto4additive.com/onto4add#MaterialStateSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ContourRegion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#InfillRegion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#PowderRegion"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

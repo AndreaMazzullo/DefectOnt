@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/andrea/ontologies/2022/8/DefectOnt"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/andrea/ontologies/2022/8/DefectOnt">
+    <Prefix name="" IRI="http://www.semanticweb.org/andrea/ontologies/2022/8/DefectOnt"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt</Import>
+    <Import>http://www.semanticweb.org/andrea/ontologies/2022/8/Measure4DefectOnt</Import>
+    <Import>http://www.semanticweb.org/andrea/ontologies/2022/8/Sensor4DefectOnt</Import>
+    <Declaration>
+        <Class IRI="http://siam.nist.gov/AM-Ontology_v2#Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://siam.nist.gov/AM-Ontology_v2#Physical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.onto4additive.com/onto4add#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.onto4additive.com/onto4add#PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.onto4additive.com/onto4add#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.opengis.net/ont/geosparql#SpatialObjectCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/mason.owl#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/mason.owl#Geometric_entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/mason.owl#Geometric_entity_for_manufacturing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/mason.owl#Geometric_flaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.owl-ontologies.com/mason.owl#Raw_material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetrologicalCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/sosa/Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/sosa/Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/sosa/Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/sosa/Sampling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/ssn/Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/ssn/Stimulus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/ssn/System"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <Class IRI="http://www.w3.org/ns/ssn/Property"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.onto4additive.com/onto4add#PhysicalObject"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.onto4additive.com/onto4add#NonQuantitativeValueSpace"/>
+        <Class IRI="http://siam.nist.gov/AM-Ontology_v2#Abstract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.onto4additive.com/onto4add#PhysicalObject"/>
+        <Class IRI="http://www.onto4additive.com/onto4add#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.onto4additive.com/onto4add#Process"/>
+        <Class IRI="http://siam.nist.gov/AM-Ontology_v2#Physical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"/>
+        <Class IRI="#MetrologicalCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/Measure"/>
+        <Class IRI="#MetrologicalCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/Prefix"/>
+        <Class IRI="#MetrologicalCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity"/>
+        <Class IRI="#MetrologicalCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/Scale"/>
+        <Class IRI="#MetrologicalCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/SystemOfUnits"/>
+        <Class IRI="#MetrologicalCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <Class IRI="#MetrologicalCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <Class IRI="http://www.onto4additive.com/onto4add#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.opengis.net/ont/geosparql#SpatialObjectCollection"/>
+        <Class IRI="http://www.onto4additive.com/onto4add#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/mason.owl#Geometric_entity"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/mason.owl#Geometric_entity_for_manufacturing"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.owl-ontologies.com/mason.owl#Geometric_flaw"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetrologicalCharacteristic"/>
+        <Class IRI="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/sosa/ObservableCharacteristic"/>
+        <Class IRI="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/sosa/Observation"/>
+        <Class IRI="http://www.onto4additive.com/onto4add#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/sosa/Platform"/>
+        <Class IRI="http://www.onto4additive.com/onto4add#PhysicalArtefact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/sosa/Result"/>
+        <Class IRI="#MetrologicalCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/sosa/Sampling"/>
+        <Class IRI="http://www.onto4additive.com/onto4add#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/ssn/Property"/>
+        <Class IRI="http://siam.nist.gov/AM-Ontology_v2#Abstract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/ssn/Stimulus"/>
+        <Class IRI="http://siam.nist.gov/AM-Ontology_v2#Phenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/ssn/System"/>
+        <Class IRI="http://www.onto4additive.com/onto4add#PhysicalArtefact"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
