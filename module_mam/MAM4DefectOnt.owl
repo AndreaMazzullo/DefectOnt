@@ -7,7 +7,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:onto4add="http://www.onto4additive.com/onto4add#">
+     xmlns:onto4add="http://www.onto4additive.com/onto4add#"
+     xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+     xmlns:MAM4DefectOnt="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt">
         <owl:imports rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/NISTAM4DefectOnt"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/Onto4Additive4DefectOnt"/>
@@ -1600,6 +1602,42 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#ContourRegion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/0/untitled-ontology-4#Defect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#VoidRegion"/>
+        <geosparql:sfOverlaps rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_c"/>
+        <MAM4DefectOnt:isInducedBy rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_o"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_l -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_l">
+        <rdf:type rdf:resource="http://www.onto4additive.com/onto4add#AMLayer"/>
+        <onto4add:hasPart rdf:resource="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_o -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andrea/ontologies/2022/6/MAM4DefectOnt#i_o">
+        <rdf:type rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+    </owl:NamedIndividual>
     
 
 
